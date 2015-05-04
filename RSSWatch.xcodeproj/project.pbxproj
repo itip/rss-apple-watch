@@ -7,39 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921282D91AF424720012C167 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921282D81AF424720012C167 /* Item.swift */; };
+		921284DD1AF431470012C167 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284BD1AF431470012C167 /* MKAnnotationView+WebCache.m */; };
+		921284DE1AF431470012C167 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284BF1AF431470012C167 /* NSData+ImageContentType.m */; };
+		921284DF1AF431470012C167 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284C11AF431470012C167 /* SDImageCache.m */; };
+		921284E01AF431470012C167 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284C31AF431470012C167 /* SDWebImageCompat.m */; };
+		921284E11AF431470012C167 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284C51AF431470012C167 /* SDWebImageDecoder.m */; };
+		921284E21AF431470012C167 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284C71AF431470012C167 /* SDWebImageDownloader.m */; };
+		921284E31AF431470012C167 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284C91AF431470012C167 /* SDWebImageDownloaderOperation.m */; };
+		921284E41AF431470012C167 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284CB1AF431470012C167 /* SDWebImageManager.m */; };
+		921284E51AF431470012C167 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284CE1AF431470012C167 /* SDWebImagePrefetcher.m */; };
+		921284E61AF431470012C167 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284D01AF431470012C167 /* UIButton+WebCache.m */; };
+		921284E71AF431470012C167 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284D21AF431470012C167 /* UIImage+GIF.m */; };
+		921284E81AF431470012C167 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284D41AF431470012C167 /* UIImage+MultiFormat.m */; };
+		921284E91AF431470012C167 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284D61AF431470012C167 /* UIImage+WebP.m */; };
+		921284EA1AF431480012C167 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284D81AF431470012C167 /* UIImageView+HighlightedWebCache.m */; };
+		921284EB1AF431480012C167 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284DA1AF431470012C167 /* UIImageView+WebCache.m */; };
+		921284EC1AF431480012C167 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 921284DC1AF431470012C167 /* UIView+WebCacheOperation.m */; };
+		921284EE1AF4315A0012C167 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921284ED1AF4315A0012C167 /* ImageIO.framework */; };
 		926E3B5C1AF40D5300A82BFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E3B5B1AF40D5300A82BFC /* AppDelegate.swift */; };
 		926E3B5F1AF40D5300A82BFC /* RSSWatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 926E3B5D1AF40D5300A82BFC /* RSSWatch.xcdatamodeld */; };
-		926E3B611AF40D5300A82BFC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E3B601AF40D5300A82BFC /* MasterViewController.swift */; };
-		926E3B631AF40D5300A82BFC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E3B621AF40D5300A82BFC /* DetailViewController.swift */; };
 		926E3B661AF40D5300A82BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926E3B641AF40D5300A82BFC /* Main.storyboard */; };
 		926E3B681AF40D5300A82BFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926E3B671AF40D5300A82BFC /* Images.xcassets */; };
 		926E3B6B1AF40D5300A82BFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926E3B691AF40D5300A82BFC /* LaunchScreen.xib */; };
-		926E3B771AF40D5300A82BFC /* RSSWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E3B761AF40D5300A82BFC /* RSSWatchTests.swift */; };
+		926E3B821AF40E2100A82BFC /* FeedListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926E3B811AF40E2100A82BFC /* FeedListTableViewController.swift */; };
+		92AE4BDD1AF7694C00D928A2 /* FeedListInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE4BDC1AF7694C00D928A2 /* FeedListInterfaceController.swift */; };
+		92AE4BDF1AF7694C00D928A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AE4BDE1AF7694C00D928A2 /* Images.xcassets */; };
+		92AE4BE31AF7694D00D928A2 /* RSSWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 92AE4BE21AF7694C00D928A2 /* RSSWatch WatchKit App.app */; };
+		92AE4BEB1AF7694D00D928A2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AE4BE91AF7694D00D928A2 /* Interface.storyboard */; };
+		92AE4BED1AF7694D00D928A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AE4BEC1AF7694D00D928A2 /* Images.xcassets */; };
+		92AE4BF01AF7694D00D928A2 /* RSSWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 92AE4BD81AF7694C00D928A2 /* RSSWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		92AE4BF91AF76C3E00D928A2 /* FeedListTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE4BF81AF76C3E00D928A2 /* FeedListTableRow.swift */; };
+		92AE4BFB1AF77DBC00D928A2 /* FeedItemInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE4BFA1AF77DBC00D928A2 /* FeedItemInterfaceController.swift */; };
+		92DCC71E1AF67ED9005CA5D6 /* FeedItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DCC71D1AF67ED9005CA5D6 /* FeedItemViewController.swift */; };
+		92DEC8A91AF4148E00D40AC5 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEC8A81AF4148E00D40AC5 /* SWXMLHash.swift */; };
+		92DEC8AD1AF414F600D40AC5 /* FeedDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEC8AC1AF414F600D40AC5 /* FeedDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		926E3B711AF40D5300A82BFC /* PBXContainerItemProxy */ = {
+		92AE4BE41AF7694D00D928A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 926E3B4E1AF40D5300A82BFC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 926E3B551AF40D5300A82BFC;
-			remoteInfo = RSSWatch;
+			remoteGlobalIDString = 92AE4BE11AF7694C00D928A2;
+			remoteInfo = "RSSWatch WatchKit App";
+		};
+		92AE4BEE1AF7694D00D928A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 926E3B4E1AF40D5300A82BFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92AE4BD71AF7694C00D928A2;
+			remoteInfo = "RSSWatch WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		92AE4BF71AF7694D00D928A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				92AE4BF01AF7694D00D928A2 /* RSSWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		921282D81AF424720012C167 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		921284BC1AF431470012C167 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		921284BD1AF431470012C167 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		921284BE1AF431470012C167 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		921284BF1AF431470012C167 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		921284C01AF431470012C167 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		921284C11AF431470012C167 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		921284C21AF431470012C167 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		921284C31AF431470012C167 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		921284C41AF431470012C167 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		921284C51AF431470012C167 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		921284C61AF431470012C167 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		921284C71AF431470012C167 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		921284C81AF431470012C167 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		921284C91AF431470012C167 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		921284CA1AF431470012C167 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		921284CB1AF431470012C167 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		921284CC1AF431470012C167 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		921284CD1AF431470012C167 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		921284CE1AF431470012C167 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		921284CF1AF431470012C167 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		921284D01AF431470012C167 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		921284D11AF431470012C167 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		921284D21AF431470012C167 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		921284D31AF431470012C167 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		921284D41AF431470012C167 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		921284D51AF431470012C167 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		921284D61AF431470012C167 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		921284D71AF431470012C167 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		921284D81AF431470012C167 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		921284D91AF431470012C167 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		921284DA1AF431470012C167 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		921284DB1AF431470012C167 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		921284DC1AF431470012C167 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		921284ED1AF4315A0012C167 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		921284EF1AF431F50012C167 /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		926E3B561AF40D5300A82BFC /* RSSWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926E3B5A1AF40D5300A82BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		926E3B5B1AF40D5300A82BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		926E3B5E1AF40D5300A82BFC /* RSSWatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSSWatch.xcdatamodel; sourceTree = "<group>"; };
-		926E3B601AF40D5300A82BFC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		926E3B621AF40D5300A82BFC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		926E3B651AF40D5300A82BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		926E3B671AF40D5300A82BFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		926E3B6A1AF40D5300A82BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		926E3B701AF40D5300A82BFC /* RSSWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		926E3B751AF40D5300A82BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		926E3B761AF40D5300A82BFC /* RSSWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSWatchTests.swift; sourceTree = "<group>"; };
+		926E3B811AF40E2100A82BFC /* FeedListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListTableViewController.swift; sourceTree = "<group>"; };
+		92AE4BD81AF7694C00D928A2 /* RSSWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RSSWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AE4BDB1AF7694C00D928A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AE4BDC1AF7694C00D928A2 /* FeedListInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListInterfaceController.swift; sourceTree = "<group>"; };
+		92AE4BDE1AF7694C00D928A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		92AE4BE21AF7694C00D928A2 /* RSSWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSSWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AE4BE81AF7694D00D928A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AE4BEA1AF7694D00D928A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		92AE4BEC1AF7694D00D928A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		92AE4BF81AF76C3E00D928A2 /* FeedListTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListTableRow.swift; sourceTree = "<group>"; };
+		92AE4BFA1AF77DBC00D928A2 /* FeedItemInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemInterfaceController.swift; sourceTree = "<group>"; };
+		92DCC71D1AF67ED9005CA5D6 /* FeedItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemViewController.swift; sourceTree = "<group>"; };
+		92DCC7211AF691D6005CA5D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		92DEC8A81AF4148E00D40AC5 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
+		92DEC8AC1AF414F600D40AC5 /* FeedDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +141,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921284EE1AF4315A0012C167 /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		926E3B6D1AF40D5300A82BFC /* Frameworks */ = {
+		92AE4BD51AF7694C00D928A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,11 +155,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		921284BB1AF431470012C167 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				921284BC1AF431470012C167 /* MKAnnotationView+WebCache.h */,
+				921284BD1AF431470012C167 /* MKAnnotationView+WebCache.m */,
+				921284BE1AF431470012C167 /* NSData+ImageContentType.h */,
+				921284BF1AF431470012C167 /* NSData+ImageContentType.m */,
+				921284C01AF431470012C167 /* SDImageCache.h */,
+				921284C11AF431470012C167 /* SDImageCache.m */,
+				921284C21AF431470012C167 /* SDWebImageCompat.h */,
+				921284C31AF431470012C167 /* SDWebImageCompat.m */,
+				921284C41AF431470012C167 /* SDWebImageDecoder.h */,
+				921284C51AF431470012C167 /* SDWebImageDecoder.m */,
+				921284C61AF431470012C167 /* SDWebImageDownloader.h */,
+				921284C71AF431470012C167 /* SDWebImageDownloader.m */,
+				921284C81AF431470012C167 /* SDWebImageDownloaderOperation.h */,
+				921284C91AF431470012C167 /* SDWebImageDownloaderOperation.m */,
+				921284CA1AF431470012C167 /* SDWebImageManager.h */,
+				921284CB1AF431470012C167 /* SDWebImageManager.m */,
+				921284CC1AF431470012C167 /* SDWebImageOperation.h */,
+				921284CD1AF431470012C167 /* SDWebImagePrefetcher.h */,
+				921284CE1AF431470012C167 /* SDWebImagePrefetcher.m */,
+				921284CF1AF431470012C167 /* UIButton+WebCache.h */,
+				921284D01AF431470012C167 /* UIButton+WebCache.m */,
+				921284D11AF431470012C167 /* UIImage+GIF.h */,
+				921284D21AF431470012C167 /* UIImage+GIF.m */,
+				921284D31AF431470012C167 /* UIImage+MultiFormat.h */,
+				921284D41AF431470012C167 /* UIImage+MultiFormat.m */,
+				921284D51AF431470012C167 /* UIImage+WebP.h */,
+				921284D61AF431470012C167 /* UIImage+WebP.m */,
+				921284D71AF431470012C167 /* UIImageView+HighlightedWebCache.h */,
+				921284D81AF431470012C167 /* UIImageView+HighlightedWebCache.m */,
+				921284D91AF431470012C167 /* UIImageView+WebCache.h */,
+				921284DA1AF431470012C167 /* UIImageView+WebCache.m */,
+				921284DB1AF431470012C167 /* UIView+WebCacheOperation.h */,
+				921284DC1AF431470012C167 /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
 		926E3B4D1AF40D5300A82BFC = {
 			isa = PBXGroup;
 			children = (
 				926E3B581AF40D5300A82BFC /* RSSWatch */,
-				926E3B731AF40D5300A82BFC /* RSSWatchTests */,
+				92AE4BD91AF7694C00D928A2 /* RSSWatch WatchKit Extension */,
+				92AE4BE61AF7694D00D928A2 /* RSSWatch WatchKit App */,
+				92DCC7231AF6B87D005CA5D6 /* Frameworks */,
 				926E3B571AF40D5300A82BFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				926E3B561AF40D5300A82BFC /* RSSWatch.app */,
-				926E3B701AF40D5300A82BFC /* RSSWatchTests.xctest */,
+				92AE4BD81AF7694C00D928A2 /* RSSWatch WatchKit Extension.appex */,
+				92AE4BE21AF7694C00D928A2 /* RSSWatch WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,10 +219,14 @@
 		926E3B581AF40D5300A82BFC /* RSSWatch */ = {
 			isa = PBXGroup;
 			children = (
+				92AE4BD31AF7687B00D928A2 /* Libs */,
 				926E3B5B1AF40D5300A82BFC /* AppDelegate.swift */,
-				926E3B601AF40D5300A82BFC /* MasterViewController.swift */,
-				926E3B621AF40D5300A82BFC /* DetailViewController.swift */,
+				926E3B811AF40E2100A82BFC /* FeedListTableViewController.swift */,
+				92DCC71D1AF67ED9005CA5D6 /* FeedItemViewController.swift */,
+				92DEC8AC1AF414F600D40AC5 /* FeedDownloader.swift */,
 				926E3B641AF40D5300A82BFC /* Main.storyboard */,
+				921284EF1AF431F50012C167 /* Swift-Bridging-Header.h */,
+				921282D81AF424720012C167 /* Item.swift */,
 				926E3B671AF40D5300A82BFC /* Images.xcassets */,
 				926E3B691AF40D5300A82BFC /* LaunchScreen.xib */,
 				926E3B5D1AF40D5300A82BFC /* RSSWatch.xcdatamodeld */,
@@ -101,21 +243,69 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		926E3B731AF40D5300A82BFC /* RSSWatchTests */ = {
+		92AE4BD31AF7687B00D928A2 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				926E3B761AF40D5300A82BFC /* RSSWatchTests.swift */,
-				926E3B741AF40D5300A82BFC /* Supporting Files */,
+				921284BB1AF431470012C167 /* SDWebImage */,
+				92DEC8A71AF4147F00D40AC5 /* SWXMLHash */,
 			);
-			path = RSSWatchTests;
+			name = Libs;
 			sourceTree = "<group>";
 		};
-		926E3B741AF40D5300A82BFC /* Supporting Files */ = {
+		92AE4BD91AF7694C00D928A2 /* RSSWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				926E3B751AF40D5300A82BFC /* Info.plist */,
+				92AE4BDC1AF7694C00D928A2 /* FeedListInterfaceController.swift */,
+				92AE4BFA1AF77DBC00D928A2 /* FeedItemInterfaceController.swift */,
+				92AE4BF81AF76C3E00D928A2 /* FeedListTableRow.swift */,
+				92AE4BDE1AF7694C00D928A2 /* Images.xcassets */,
+				92AE4BDA1AF7694C00D928A2 /* Supporting Files */,
+			);
+			path = "RSSWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		92AE4BDA1AF7694C00D928A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92AE4BDB1AF7694C00D928A2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92AE4BE61AF7694D00D928A2 /* RSSWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				92AE4BE91AF7694D00D928A2 /* Interface.storyboard */,
+				92AE4BEC1AF7694D00D928A2 /* Images.xcassets */,
+				92AE4BE71AF7694D00D928A2 /* Supporting Files */,
+			);
+			path = "RSSWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		92AE4BE71AF7694D00D928A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92AE4BE81AF7694D00D928A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92DCC7231AF6B87D005CA5D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92DCC7211AF691D6005CA5D6 /* QuartzCore.framework */,
+				921284ED1AF4315A0012C167 /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			path = RSSWatch;
+			sourceTree = "<group>";
+		};
+		92DEC8A71AF4147F00D40AC5 /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				92DEC8A81AF4148E00D40AC5 /* SWXMLHash.swift */,
+			);
+			name = SWXMLHash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,33 +318,50 @@
 				926E3B521AF40D5300A82BFC /* Sources */,
 				926E3B531AF40D5300A82BFC /* Frameworks */,
 				926E3B541AF40D5300A82BFC /* Resources */,
+				92AE4BF71AF7694D00D928A2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				92AE4BEF1AF7694D00D928A2 /* PBXTargetDependency */,
 			);
 			name = RSSWatch;
 			productName = RSSWatch;
 			productReference = 926E3B561AF40D5300A82BFC /* RSSWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		926E3B6F1AF40D5300A82BFC /* RSSWatchTests */ = {
+		92AE4BD71AF7694C00D928A2 /* RSSWatch WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 926E3B7D1AF40D5300A82BFC /* Build configuration list for PBXNativeTarget "RSSWatchTests" */;
+			buildConfigurationList = 92AE4BF41AF7694D00D928A2 /* Build configuration list for PBXNativeTarget "RSSWatch WatchKit Extension" */;
 			buildPhases = (
-				926E3B6C1AF40D5300A82BFC /* Sources */,
-				926E3B6D1AF40D5300A82BFC /* Frameworks */,
-				926E3B6E1AF40D5300A82BFC /* Resources */,
+				92AE4BD41AF7694C00D928A2 /* Sources */,
+				92AE4BD51AF7694C00D928A2 /* Frameworks */,
+				92AE4BD61AF7694C00D928A2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				926E3B721AF40D5300A82BFC /* PBXTargetDependency */,
+				92AE4BE51AF7694D00D928A2 /* PBXTargetDependency */,
 			);
-			name = RSSWatchTests;
-			productName = RSSWatchTests;
-			productReference = 926E3B701AF40D5300A82BFC /* RSSWatchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "RSSWatch WatchKit Extension";
+			productName = "RSSWatch WatchKit Extension";
+			productReference = 92AE4BD81AF7694C00D928A2 /* RSSWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		92AE4BE11AF7694C00D928A2 /* RSSWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92AE4BF11AF7694D00D928A2 /* Build configuration list for PBXNativeTarget "RSSWatch WatchKit App" */;
+			buildPhases = (
+				92AE4BE01AF7694C00D928A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSSWatch WatchKit App";
+			productName = "RSSWatch WatchKit App";
+			productReference = 92AE4BE21AF7694C00D928A2 /* RSSWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
 		};
 /* End PBXNativeTarget section */
 
@@ -168,9 +375,11 @@
 					926E3B551AF40D5300A82BFC = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
-					926E3B6F1AF40D5300A82BFC = {
+					92AE4BD71AF7694C00D928A2 = {
 						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 926E3B551AF40D5300A82BFC;
+					};
+					92AE4BE11AF7694C00D928A2 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -188,7 +397,8 @@
 			projectRoot = "";
 			targets = (
 				926E3B551AF40D5300A82BFC /* RSSWatch */,
-				926E3B6F1AF40D5300A82BFC /* RSSWatchTests */,
+				92AE4BD71AF7694C00D928A2 /* RSSWatch WatchKit Extension */,
+				92AE4BE11AF7694C00D928A2 /* RSSWatch WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -204,10 +414,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		926E3B6E1AF40D5300A82BFC /* Resources */ = {
+		92AE4BD61AF7694C00D928A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AE4BDF1AF7694C00D928A2 /* Images.xcassets in Resources */,
+				92AE4BE31AF7694D00D928A2 /* RSSWatch WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92AE4BE01AF7694C00D928A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92AE4BEB1AF7694D00D928A2 /* Interface.storyboard in Resources */,
+				92AE4BED1AF7694D00D928A2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,28 +439,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921284EB1AF431480012C167 /* UIImageView+WebCache.m in Sources */,
+				921284E71AF431470012C167 /* UIImage+GIF.m in Sources */,
+				921284E01AF431470012C167 /* SDWebImageCompat.m in Sources */,
+				921284E61AF431470012C167 /* UIButton+WebCache.m in Sources */,
+				921284E81AF431470012C167 /* UIImage+MultiFormat.m in Sources */,
+				921284E51AF431470012C167 /* SDWebImagePrefetcher.m in Sources */,
+				92DEC8AD1AF414F600D40AC5 /* FeedDownloader.swift in Sources */,
+				921284EC1AF431480012C167 /* UIView+WebCacheOperation.m in Sources */,
+				921284DD1AF431470012C167 /* MKAnnotationView+WebCache.m in Sources */,
+				92DCC71E1AF67ED9005CA5D6 /* FeedItemViewController.swift in Sources */,
+				921284E91AF431470012C167 /* UIImage+WebP.m in Sources */,
 				926E3B5F1AF40D5300A82BFC /* RSSWatch.xcdatamodeld in Sources */,
+				921284E31AF431470012C167 /* SDWebImageDownloaderOperation.m in Sources */,
+				921284E11AF431470012C167 /* SDWebImageDecoder.m in Sources */,
+				926E3B821AF40E2100A82BFC /* FeedListTableViewController.swift in Sources */,
+				921284EA1AF431480012C167 /* UIImageView+HighlightedWebCache.m in Sources */,
+				921284DE1AF431470012C167 /* NSData+ImageContentType.m in Sources */,
+				921284E21AF431470012C167 /* SDWebImageDownloader.m in Sources */,
 				926E3B5C1AF40D5300A82BFC /* AppDelegate.swift in Sources */,
-				926E3B611AF40D5300A82BFC /* MasterViewController.swift in Sources */,
-				926E3B631AF40D5300A82BFC /* DetailViewController.swift in Sources */,
+				921282D91AF424720012C167 /* Item.swift in Sources */,
+				92DEC8A91AF4148E00D40AC5 /* SWXMLHash.swift in Sources */,
+				921284E41AF431470012C167 /* SDWebImageManager.m in Sources */,
+				921284DF1AF431470012C167 /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		926E3B6C1AF40D5300A82BFC /* Sources */ = {
+		92AE4BD41AF7694C00D928A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926E3B771AF40D5300A82BFC /* RSSWatchTests.swift in Sources */,
+				92AE4BDD1AF7694C00D928A2 /* FeedListInterfaceController.swift in Sources */,
+				92AE4BF91AF76C3E00D928A2 /* FeedListTableRow.swift in Sources */,
+				92AE4BFB1AF77DBC00D928A2 /* FeedItemInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		926E3B721AF40D5300A82BFC /* PBXTargetDependency */ = {
+		92AE4BE51AF7694D00D928A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 926E3B551AF40D5300A82BFC /* RSSWatch */;
-			targetProxy = 926E3B711AF40D5300A82BFC /* PBXContainerItemProxy */;
+			target = 92AE4BE11AF7694C00D928A2 /* RSSWatch WatchKit App */;
+			targetProxy = 92AE4BE41AF7694D00D928A2 /* PBXContainerItemProxy */;
+		};
+		92AE4BEF1AF7694D00D928A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92AE4BD71AF7694C00D928A2 /* RSSWatch WatchKit Extension */;
+			targetProxy = 92AE4BEE1AF7694D00D928A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +505,14 @@
 				926E3B6A1AF40D5300A82BFC /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		92AE4BE91AF7694D00D928A2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92AE4BEA1AF7694D00D928A2 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -350,7 +605,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RSSWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSWatch/Swift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -360,41 +617,65 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RSSWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSWatch/Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
-		926E3B7E1AF40D5300A82BFC /* Debug */ = {
+		92AE4BF21AF7694D00D928A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RSSWatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IBSC_MODULE = RSSWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "RSSWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSWatch.app/RSSWatch";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
 			};
 			name = Debug;
 		};
-		926E3B7F1AF40D5300A82BFC /* Release */ = {
+		92AE4BF31AF7694D00D928A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = RSSWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "RSSWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		92AE4BF51AF7694D00D928A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RSSWatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSWatch.app/RSSWatch";
+				INFOPLIST_FILE = "RSSWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		92AE4BF61AF7694D00D928A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RSSWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -417,14 +698,25 @@
 				926E3B7C1AF40D5300A82BFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		926E3B7D1AF40D5300A82BFC /* Build configuration list for PBXNativeTarget "RSSWatchTests" */ = {
+		92AE4BF11AF7694D00D928A2 /* Build configuration list for PBXNativeTarget "RSSWatch WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				926E3B7E1AF40D5300A82BFC /* Debug */,
-				926E3B7F1AF40D5300A82BFC /* Release */,
+				92AE4BF21AF7694D00D928A2 /* Debug */,
+				92AE4BF31AF7694D00D928A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92AE4BF41AF7694D00D928A2 /* Build configuration list for PBXNativeTarget "RSSWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92AE4BF51AF7694D00D928A2 /* Debug */,
+				92AE4BF61AF7694D00D928A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -3,11 +3,12 @@
 //  RSSWatch
 //
 //  Created by Ian Tipton on 01/05/2015.
-//  Copyright (c) 2015 Bronze Software Labs. All rights reserved.
+//  Copyright (c) 2015. All rights reserved.
 //
 
 import UIKit
 import CoreData
+import WatchKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,11 +19,100 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         let navigationController = self.window!.rootViewController as! UINavigationController
-        let controller = navigationController.topViewController as! MasterViewController
+        let controller = navigationController.topViewController as! FeedListTableViewController
         controller.managedObjectContext = self.managedObjectContext
+               
+        
+//        let d = "Fri, 01 May 2015 11:18 EDT"
+//        if let date = self.dateFromRFC822String(d){
+//            println("\(date)")
+//        }
+        
+        /*
+          Listen out for Core Data changes made on different threads.
+          See http://www.objc.io/issue-2/common-background-practices.html
+         */
+        NSNotificationCenter.defaultCenter().addObserverForName(NSManagedObjectContextDidSaveNotification, object: nil, queue: nil) { (notification) -> Void in
+            
+            // Make sure we merge on the main thread
+            dispatch_async(dispatch_get_main_queue(),{
+                
+                let context = notification.object as! NSManagedObjectContext
+                
+                // Make sure we're merging the same type of data (only an issue if you use other
+                // frameworks which use Core Data, e.g. Google Maps
+                if context.persistentStoreCoordinator != self.managedObjectContext?.persistentStoreCoordinator{
+                    return;
+                }
+                
+                // Merge the data in (double check that the context isn't merging itself).
+                if context != self.managedObjectContext{
+                    self.managedObjectContext?.mergeChangesFromContextDidSaveNotification(notification)
+                }
+            })
+        }
+        
         return true
     }
 
+    // MARK: - WatchKit
+    
+    func application(application: UIApplication,
+        handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?,
+        reply: (([NSObject : AnyObject]!) -> Void)!) {
+            
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+            
+        if let userInfo = userInfo, request = userInfo["request"] as? String {
+            if request == "feedList" {
+                
+                // See if data has ever been downloaded. A more sophisticated solution would be to download data now.
+                if NSUserDefaults.standardUserDefaults().valueForKey("feed_last_updated") == nil{
+                    reply(["error": "never_launched"])
+                    return
+                }
+                
+                // Read the most recent 10 items from the database
+                let fetchRequest = NSFetchRequest()
+                let entity = NSEntityDescription.entityForName("Item", inManagedObjectContext: self.managedObjectContext!)
+                fetchRequest.entity = entity
+                fetchRequest.fetchLimit = 10;
+                fetchRequest.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
+                
+                var error:NSError?
+                var feedItems = self.managedObjectContext!.executeFetchRequest(fetchRequest, error: &error) as? [Item]
+                if (feedItems == nil || error != nil){
+                    // If no data or if an error exists, something went wrong with query
+                    reply(["error": "data"])
+                    return
+                }
+                
+                // Put data into an array of dictionaries (more efficient that serialising Core Data objects)
+                var data = [[String:String]]()
+                for item in feedItems! {
+                    data.append([
+                        "title":item.title,
+                        "date": dateFormatter.stringFromDate(item.date),
+                        "description" : item.desc,
+                        "image" : item.image
+                        
+                    ])
+                }
+                
+                reply(["listData": NSKeyedArchiver.archivedDataWithRootObject(data)])
+                return
+            }
+            
+        }
+  
+        // If we've reached here then it means something went wrong (or app requested data which isn't available)
+        reply(["error": true])
+    }
+    
+    
+    // MARK: - Lifecycle
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

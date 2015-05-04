@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "92AE4BE11AF7694C00D928A2"
+               BuildableName = "RSSWatch WatchKit App.app"
+               BlueprintName = "RSSWatch WatchKit App"
+               ReferencedContainer = "container:RSSWatch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "926E3B551AF40D5300A82BFC"
                BuildableName = "RSSWatch.app"
                BlueprintName = "RSSWatch"
@@ -23,14 +37,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "926E3B6F1AF40D5300A82BFC"
-               BuildableName = "RSSWatchTests.xctest"
-               BlueprintName = "RSSWatchTests"
+               BlueprintIdentifier = "92AE4BD71AF7694C00D928A2"
+               BuildableName = "RSSWatch WatchKit Extension.appex"
+               BlueprintName = "RSSWatch WatchKit Extension"
                ReferencedContainer = "container:RSSWatch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +56,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "926E3B6F1AF40D5300A82BFC"
-               BuildableName = "RSSWatchTests.xctest"
-               BlueprintName = "RSSWatchTests"
-               ReferencedContainer = "container:RSSWatch.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "926E3B551AF40D5300A82BFC"
-            BuildableName = "RSSWatch.app"
-            BlueprintName = "RSSWatch"
+            BlueprintIdentifier = "92AE4BE11AF7694C00D928A2"
+            BuildableName = "RSSWatch WatchKit App.app"
+            BlueprintName = "RSSWatch WatchKit App"
             ReferencedContainer = "container:RSSWatch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,16 +76,27 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/RSSWatch">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "926E3B551AF40D5300A82BFC"
-            BuildableName = "RSSWatch.app"
-            BlueprintName = "RSSWatch"
+            BlueprintIdentifier = "92AE4BE11AF7694C00D928A2"
+            BuildableName = "RSSWatch WatchKit App.app"
+            BlueprintName = "RSSWatch WatchKit App"
             ReferencedContainer = "container:RSSWatch.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "92AE4BE11AF7694C00D928A2"
+            BuildableName = "RSSWatch WatchKit App.app"
+            BlueprintName = "RSSWatch WatchKit App"
+            ReferencedContainer = "container:RSSWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +106,27 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/RSSWatch">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "926E3B551AF40D5300A82BFC"
-            BuildableName = "RSSWatch.app"
-            BlueprintName = "RSSWatch"
+            BlueprintIdentifier = "92AE4BE11AF7694C00D928A2"
+            BuildableName = "RSSWatch WatchKit App.app"
+            BlueprintName = "RSSWatch WatchKit App"
             ReferencedContainer = "container:RSSWatch.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "92AE4BE11AF7694C00D928A2"
+            BuildableName = "RSSWatch WatchKit App.app"
+            BlueprintName = "RSSWatch WatchKit App"
+            ReferencedContainer = "container:RSSWatch.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
