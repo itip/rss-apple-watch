@@ -22,15 +22,15 @@ class FeedListInterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         
-        //        Example 1
-        //        self.feedListTable.setNumberOfRows(10, withRowType: "FeedItem")
-        //
-        //        for var x=0; x < 10; x++ {
-        //            if let tableRow = self.feedListTable.rowControllerAtIndex(x) as? FeedListTableRow{
-        //                tableRow.headlineLabel.setText("Headline \(x+1)")
-        //                tableRow.subheadLabel.setText("Subhead \(x+1)")
-        //            }
-        //        }
+//        Example 1
+//        self.feedListTable.setNumberOfRows(10, withRowType: "FeedItem")
+//
+//        for var x=0; x < 10; x++ {
+//            if let tableRow = self.feedListTable.rowControllerAtIndex(x) as? FeedListTableRow{
+//                tableRow.headlineLabel.setText("Headline \(x+1)")
+//                tableRow.subheadLabel.setText("Subhead \(x+1)")
+//            }
+//        }
         
         // Example 2
         //        WKInterfaceController.openParentApplication(["request": "feedList"],
